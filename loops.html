@@ -10,16 +10,39 @@
 
     <script>
 /* STARTING CODE */
-function getRandomInt(min, max) {
-    return Math.floor(Math.random() * Math.floor(max - min)) + min;
+	var num = prompt("guess a number");
+	function getRandomInt(min, max) {
+    	return Math.floor(Math.random() * Math.floor(max - min)) + min;
+		}
+var c=0;
+var randomInt = getRandomInt(1, 10);
+var flag=false;
+
+while(num>0 &&num<11&& flag==false)
+{
+if (num>randomInt)
+	{alert("you guessed too high");
+}
+else if (num<randomInt)
+	{alert("you guessed too low");}
+else
+	{alert("you guessed correctly! it took you "+ String(c) + " times to guess the right number"); 
+
+flag=true;}
+if (flag==false)
+{c++;
+num = prompt("guess a number");}
+
+
+
 }
 
-var randomInt = getRandomInt(1, 100);
+
 /* END STARTING CODE */
 
 // your code goes under here
 
-    </script>
+</script>
 </body>
 
 </html>

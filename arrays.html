@@ -9,7 +9,14 @@
     <h1>JavaScript Arrays</h1>
 
     <script>
-// your code goes here
+    	var Questions = prompt("three things that you are excited for about MEET(seperated by a comma and a space ");
+    	Questions=Questions.split(", ");
+    	console.log(Questions);
+    	Questions.sort();
+    	console.log(Questions);
+    	var sortedQuestions=Questions.join(", ");
+    	document.write(sortedQuestions);
+
     </script>
 </body>
 
